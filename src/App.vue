@@ -5,12 +5,17 @@
   </div>
 </template>
 <script>
+import storage from './storage'
 // import Home from '@/pages/home'
 export default {
   name: 'App',
   components: {
     
+  },
+  mounted() {
+    storage.setItem('a', 1)
   }
+  
 }
 
   

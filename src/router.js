@@ -66,6 +66,7 @@ export default new Router({
                     component: Alipay
                 }
             ]
+            
         }
     ]
 })
