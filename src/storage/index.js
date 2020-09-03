@@ -13,7 +13,7 @@ export default {
             window.sessionStorage.setItem(STORAGE_KEY,JSON.stringify(val))
         }
     },  
-    
+
     // 获取某个模块下的属性 user下的userName 
     getItem(key, module_name) { 
         if (module_name) {
@@ -25,15 +25,16 @@ export default {
     getStorage() {
         return JSON.parse(window.sessionStorage.getItem(STORAGE_KEY) || '{}')
     },
-    
+
     
     clear(key, module_name) { 
         let val = this.getStorage()
         if (module_name) {
+            if (!val[module_name]) return
             delete val[module_name][key]
         } else {
             delete val[key]
         }
-        this.setItem(val)
+        window.sessionStorage.setItem(STORAGE_KEY,JSON.stringify(val))
     }
 }
