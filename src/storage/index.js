@@ -12,8 +12,7 @@ export default {
             val[key] = value
             window.sessionStorage.setItem(STORAGE_KEY,JSON.stringify(val))
         }
-    },  
-
+    },      
     // 获取某个模块下的属性 user下的userName 
     getItem(key, module_name) { 
         if (module_name) {

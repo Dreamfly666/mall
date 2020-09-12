@@ -1,6 +1,6 @@
 <template>
     <div>
-     nav-footer
+        
     </div>
 </template>
 <script>
@@ -11,9 +11,7 @@ export default {
             msg: 'nav-footer scoped'
         }
     }  
-    
 }
-
 </script>
 <style scoped>
 </style>

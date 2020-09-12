@@ -1,6 +1,5 @@
 <template>
     <div>
-    order-footer
     </div>
 </template>
 <script>
@@ -10,7 +9,7 @@ export default {
         return {
             msg: 'nav-footer scoped'
         }
-    }  
+    } 
     
 }
 
