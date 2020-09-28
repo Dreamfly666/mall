@@ -19,6 +19,8 @@ import env from './eny'
 
 axios.defaults.baseURL = '/api'
 
+
+
 console.log(env.baseURL)
 
 

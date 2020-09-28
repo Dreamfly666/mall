@@ -1,7 +1,6 @@
 // 承担首页 产品站 产品详情
 <template>
     <div>
-      
       <nav-header></nav-header> 
       <router-view></router-view>
       <nav-footer></nav-footer>
@@ -17,7 +16,6 @@ export default {
         NavFooter,
         NavHeader
     }
-
 }
 </script>
 <style scoped>
